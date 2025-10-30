@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My home page for wdd231">
+    <meta name="author" content="Mark Fullerton">
+    <title>Home Page</title>
+
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--Scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Mark Fullerton</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                My name is Mark Fullerton, I am 35 years old, and live in Utah.
+                I enjoy crocheting and playing video games.
+            </p>
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/studentphoto.jpg" alt="Mark Fullerton">
+        </section>
+
+        <section id="certificate">
+            <h2> Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+            <div id="course-list" class="course-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">    
+            <a href="https://www.linkedin.com/in/mark-fullerton-b53918253" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Logo" width="16" height="16"></a>
+            <a href="https://github.com/mfullerton4/wdd231.git" target="_blank"><img src="images/github.svg"alt="GitHub Logo" width="16" height="16"></a>
+            <a href="https://www.facebook.com/mark.fulletrton" target="_blank"><img src="images/facebook.svg"alt="Facebook Logo" width="16" height="16"></a>
+            <a href="https://www.instagram.com/mfullerton4/" target="_blank"><img src="images/instagram.svg"alt="Instagram Logo" width="16" height="16"></a>
+        </div>
+            <p>copyright symbol and current year</p>
+            <p>Last Modified</p>
+    </footer>
+   
+</body>
+</html>

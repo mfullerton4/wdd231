@@ -1,0 +1,157 @@
+ /*Site Wide*/
+:root {
+    --primary: #4c9a9a;
+    --secondary: #f4a261;
+    --background: #faf9f6;
+    --text: #2e2e2e;
+}
+
+ /*Header*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+h1,h2 {
+    color: var(--primary);
+}
+
+/*Hamburger Navigation*/
+.hamburger {
+background: none;
+border: none;
+color: var(--text);
+cursor: pointer;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+} 
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+.navigation li.current {
+    background-color: #eee;
+}
+.navigation a:hover {
+    background-color: var(--secondary);
+}
+h1 {
+    margin-left: 10px;
+}
+
+/*body*/
+body {
+    background-color: var(--background);
+    font-family: 'Merriweather', sans-serif;
+}
+
+/*courses*/
+.course-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.course-card.completed {
+    background-color: var(--primary);
+    color: white;
+}
+
+.course-card.pending {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filters button:hover {
+    background-color: var(--secondary);
+}
+
+/*footer*/
+footer {
+    background-color: var(--background);
+    color: var(--text);
+    padding: 1rem 10px;
+    text-align: center;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 15px;
+}
+.social img {
+    width: 22px;
+    height: 22px;
+}
+.social a:hover {
+    background-color: #ddd;
+}
