@@ -1,0 +1,18 @@
+{
+    "familyName": "Fullerton",
+    "moveInDate": "2025-04-26",
+    "numberOfPeople": 2,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Mark Fullerton",
+            "gender": "Male",
+            "birthdate": "1990-02-26"
+        },
+        {
+            "name": "TyAnna Fullerton",
+            "gender": "Female",
+            "birthdate": "1994-05-26"
+        }
+    ]
+}
