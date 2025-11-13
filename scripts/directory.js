@@ -1,7 +1,7 @@
 // load members from json
 async function loadMembers() {
     try {
-        const response = await fetch("data/members.json");
+        const response = await fetch("members.json");
         const members = await response.json();
         displayMembers(members);
     } catch (error) {
