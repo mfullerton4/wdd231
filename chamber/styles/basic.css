@@ -47,5 +47,47 @@ header {
 .hero img {
     width: 100%;
     height: auto;
-    display:block
+    display:block;
+}
+
+.current-events {
+    padding: 2rem;
+    background-color: var(--secondary);
+    border-radius: 8px;
+}
+
+.current-events h2 {
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 1.5rem
+}
+
+.event {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid var(--primary);
+    background-color: var(--background);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.event h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.weather {
+    padding: 2rem;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.weather h2 {
+    text-align: center;
+    color: var(--text);
+}
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
