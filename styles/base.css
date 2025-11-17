@@ -155,3 +155,30 @@ footer {
 .social a:hover {
     background-color: #ddd;
 }
+
+/* Base modal styling*/
+dialog {
+    width: 400px;
+    max-width: 90%;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+::backdrop {
+    background-color: rgba(0,0,0,0.6);
+}
+
+dialog h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+dialog button:hover {
+    background-color: #c0392b;
+}
+

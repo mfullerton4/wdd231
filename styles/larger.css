@@ -19,3 +19,8 @@ header {
     border: none;
 }
 }
+
+dialog {
+    width: 95%;
+    padding: 15px;
+}

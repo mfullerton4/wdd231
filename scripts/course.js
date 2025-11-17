@@ -42,3 +42,37 @@ wddBtn.addEventListener("click", () => renderCourses("WDD"));
 cseBtn.addEventListener("click", () => renderCourses("CSE"));
 
 renderCourses(); // Initial load
+
+//grab the modal elements
+const modal = document.querySelector('#course-details');
+
+// Function to populate and show the course details
+modal.innerHTML = `
+<h2>${course.title}</h2>
+<p><strong>Credits:</strong>${course.credits}</p>
+<p><strong>Description:</strong>${course.description}</p>
+<p><strong>Certificate:</strong>${course.certificate}</p>
+<p><strong>Technology Stack:</strong>${course.tech}</p>
+<button id="closeModal">Close</button>
+`
+// Show the modal
+modal.showModal();
+
+// Close button event
+const closeBtn = modal.querySelector('#closeModal');
+closeBtn.addEventListener('click', () => modal.closest());
+
+// Attach to course cards
+const courseCards = document.querySelectorAll('.course-card');
+courseCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const course = {
+            title: card.dataset.title,
+            credits: card.dataset.credits,
+            description: card.dataset.description,
+            certificate: card.dataset.certificate,
+            tech: card.dataset.tech
+        };
+        showCourseDetails(course);
+    });
+});
