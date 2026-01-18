@@ -1,26 +1,63 @@
-[
-    {
-        "name": "Mountain View Café",
-        "address": "3500 Constitution Blvd, West Valley City, UT",
-        "phone": "801-555-1111",
-        "website": "https://mountainviewcafe.com",
-        "image": "mountainview.png",
-        "membership": 3
-    },
-    {
-        "name": "Jordan Tech Solutions",
-        "address": "2200 W 3500 S, West Valley City, UT",
-        "phone": "801-555-2222",
-        "website": "https://jordantech.com",
-        "image": "jordantech.png",
-        "membership": 2
-    },
-    {
-        "name": "Great Salt Lake Realty",
-        "address": "4100 S Redwood Rd, West Valley City, UT",
-        "phone": "801-555-3333",
-        "website": "https://gslrealty.com",
-        "image": "realty.png",
-        "membership": 1
-    }
-]
+{
+
+   "members":
+    [
+        {
+            "name": "Mountain View Café",
+            "address": "3500 Constitution Blvd, West Valley City, UT",
+            "phone": "801-555-1111",
+            "website": "https://mountainviewcafe.com",
+            "image": "mountainview.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Jordan Tech Solutions",
+            "address": "2200 W 3500 S, West Valley City, UT",
+            "phone": "801-555-2222",
+            "website": "https://jordantech.com",
+            "image": "jordantech.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Great Salt Lake Realty",
+            "address": "4100 S Redwood Rd, West Valley City, UT",
+            "phone": "801-555-3333",
+            "website": "https://gslrealty.com",
+            "image": "realty.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Blue Mountain Cofee",
+            "address": "123 Roast Lane, West Valley City, UT",
+            "phone": "801-555-1234",
+            "website": "https://bluemountaincofee.com",
+            "image": "bluemountain.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Summit Trail Outfitters",
+            "address": "455 Canyon Ridge Road, West Valley City, UT",
+            "phone": "801-555-9823",
+            "website": "https://summittrailoutfitters.com",
+            "image": "summittrail.jpg",
+            "membership": 2
+        },
+        {
+            "name": "PureSpring Cleaning Co.",
+            "address": "88 Meadowbrook Drive, West Valley City, UT",
+            "phone": "801-555-4410",
+            "website": "https://purespringcleaning.com",
+            "image": "purespring.jpg",
+            "membership": 1
+        },
+        {
+            "name": "PixelForge Creative studio",
+            "address": "1200 Innovation way Suite 204, West Valley City, UT",
+            "phone": "801-555-7742",
+            "website": "https://pixelforgecreative.com",
+            "image": "pixelforge.jpg",
+            "membership": 3
+        }
+        
+    ]
+}
