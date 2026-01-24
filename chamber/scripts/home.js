@@ -15,8 +15,7 @@ async function getWeather() {
 
         // Forecast (3 days)
         const forecastResponse = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=West+Valley+City,US&units=imperial&appid=2aba3d41dedddf32b9c073fd10cc1004`
-
+            `https://api.openweathermap.org/data/2.5/forecast?q=West+Valley+City,US&units=imperial&appid=2aba3d41dedddf32b9c073fd10cc1004`
         );
         const forecastData = await forecastResponse.json();
 
@@ -43,24 +42,39 @@ async function getWeather() {
 getWeather();
 
 // load members from json
-async function loadMembers() {
+async function loadspotlights() {
     try {
         const response = await fetch("data/members.json");
         const members = await response.json();
-        displayMembers(members);
+
+        //Filter gold +silver members
+        const qualified = members.members.filter(member =>
+            member.membership === 3 || member.membership === 2
+        );
+
+        // shuffle array
+        const shuffled = qualified.sort(() => 0.5 - Math.random());
+        
+
+        //pick 2 or 3
+        const spotlightCount = Math.random() < 0.5 ? 2 : 3;
+        const selected = shuffled.slice(0, spotlightCount);
+
+
+        displaySpotlights(selected);
     } catch (error) {
         console.error("Error loading members:", error); 
     }
 }
 
 //Render members
-function displayMembers(members) {
-    const container = document.getElementById("members");
+function displaySpotlights(members) {
+    const container = document.querySelector('#spotlights');
     container.innerHTML = "";
 
     members.forEach(member => {
         const card = document.createElement("div");
-        card.classList.add("member-card");
+        card.classList.add('spotlight-card');
 
         card.innerHTML = `
         <img src="images/${member.image}" alt="${member.name} logo">
@@ -75,10 +89,7 @@ function displayMembers(members) {
 
     });
 }
-
+loadspotlights();
 //footer info
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
-
-//Initialize
-loadMembers();
