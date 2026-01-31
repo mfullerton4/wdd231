@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+
+<body>
+    <header>
+        <h1>Thank You for Your Application</h1>
+    </header>
+
+    <main class="thankyou-container">
+        <p>Your membership application has been successfully submitted.</p>
+
+        <h2>Submitted Information</h2>
+        <div id="submittedData"></div>
+
+        <a href="index.html" class="return-link">Return to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mark Fullerton</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Parse URL parameters
+        const params = new URLSearchParams(window.location.search);
+
+        // Container for output
+        const container = document.getElementById("submittedData");
+
+        // Loop through all submitted fields
+        params.forEach((value, key) => {
+            const item = document.createElement("p");
+            item.innerHTML = `<strong>${key}:</strong> ${value}`;
+            container.appendChild(item);
+        });
+
+        // Footer info
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+
+</body>
+
+</html>
