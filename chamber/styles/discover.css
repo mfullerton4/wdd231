@@ -1,0 +1,54 @@
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.discover-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+.discover-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.discover-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.discover-card address {
+    font-style: normal;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.discover-card p {
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.discover-card button {
+    background: #004aad;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.discover-card button:hover {
+    background: #00337a;
+}

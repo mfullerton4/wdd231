@@ -1,4 +1,4 @@
-@media ( max-width: 600px) {
+@media ( max-width: 601px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -39,3 +39,10 @@
     top: 1rem;
 }
 }
+
+.cards-grid {
+    grid-template-columns: repeat(4, 1frf);
+    gap: 2rem;
+    padding: 2rem 3rem;
+}
+

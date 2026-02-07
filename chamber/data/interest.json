@@ -1,0 +1,64 @@
+{
+    "places": [
+
+        
+        {
+            "name": "Lodestone Park",
+            "address": "6252 W 6200 S, Kearns, UT",
+            "type": "Tourist attraction",
+            "description": "A large community park featuring a zipline, sports fields, playgrounds, and picnic areas.",
+            "image": "Lodestone.jpg"
+            
+        },
+        {
+            "name": "Scottsdale Park",
+            "address": "3755 W 3100 S, West Valle City, UT",
+            "type": "Park",
+            "description": "A quiet neighborhood park with open green space and family-friendly amenities.",
+            "image": "Scotsdale.jpg"
+        },
+        {
+            "name": "Decker Lake Park",
+            "address": "2300 Parway Blv, West Valle City, UT",
+            "type": "Park",
+            "description": "A Peacful lakeside park with walking paths and bird-watching opportunites.",
+            "image": "decker-lake.jpg"
+        },
+        {
+            "name": "Peachwood Park",
+            "address": "3510 W 3965 S, West Valle City, UT",
+            "type": "Tourist attraction",
+            "description": "A shaded community park with playgrounds and open recreation space.",
+            "image": "peachwood.jpg"
+        },
+        {
+            "name": "Fassio Farm Park",
+            "address": "5240 W Rancho Vista Ln, West Valle City, UT",
+            "type": "Park",
+            "description": "A spacious park with walking paths, fields, and quiet outdoor areas.",
+            "image": "Fassio.jpg"
+        },
+        {
+            "name": "Centennial Park",
+            "address": "5405 W 3100 S, West Valle City, UT",
+            "type": "Park",
+            "description": "A well-maintained park with sports fields, playgrounds, and community recreation areas.",
+            "image": "centennial.jpg"
+        },
+        {
+            "name": "Utah Cultural Celebration Center",
+            "address": "1355 W 3100 S, West Valle City, UT",
+            "type": "Cultural Center",
+            "description": "A vibrant venue hosting art exhibits, performances, and multicultural community events.",
+            "image": "cultural.jpg"
+        },
+        {
+            "name": "Maverick Center",
+            "address": "3200 Decker Lake Dr, West Valle City, UT",
+            "type": "Arena",
+            "description": "A major entertainment venue hosting concerts, hockey games, and large events.",
+            "image": "Maverik-Center.jpg"
+        }
+        
+    ]
+}
