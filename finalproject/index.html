@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark Fullerton">
+    <meta name="description" content="Discover local hiking trails, explore difficulty levels, and plan safe outdoor adventures.">
+
+    <!-----------Open graph------------>
+    <meta property="og:title" content="Local Trail Finder">
+    <meta property="og:description" content="Discover local hiking trails and plan your next outdoor adventure.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/map.jpg">
+
+    <title>Local Trail Finder</title>
+
+    <!-----Favicon----->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!--ES Module-->
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/featured.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">Trail Finder</a>
+
+            <button id="menu-btn" aria-label="Open Menu">☰</button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="Weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--HERO-->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Your Next Local Adventure</h1>
+                <p>Discover trails near you - difficulty, distance, elevation, and more.</p>
+                <a href="trails.html" class="cta-ctn">Explore Trails</a>
+            </div>
+        </section>
+
+        <!--Featured Trails-->
+        <section class="featured">
+            <h2 class="sr-only">Featured trails</h2>
+            <div id="featured-container" class=" trail-grid">
+
+            </div>
+        </section>
+
+        <!--Value Proposition-->
+        <section class="value">
+            <h2>Why Hike Locally?</h2>
+            <div class="value-grid">
+                <article>
+                    <h3>Stay Active</h3>
+                    <p>Enjoy the physical and mental benefits of outdoor activity.</p>
+                </article>
+
+                <article>
+                    <h3>Explore Your Area</h3>
+                    <p>Discover hidden gems and beautiful trails near you.</p>
+                </article>
+
+                <article>
+                    <h3>Plan With Confidence</h3>
+                    <p>Use our weather tools to prepare for your next hike.</p>
+                </article>
+            </div>
+        </section>
+        <!--Weather-->
+        <section class="info-cards">
+            <article class="info-card">
+                <h3>Weather & Planning</h3>
+                <p>Check local conditions before you head out.</p>
+                <a href="weather.html" class="info-btn">View Weather</a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Local Trail Finder</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@media (min-width: 900px) {
+    .hero {
+        height: 75vh;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        color: #f2e8cf;
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
+        color: #ffffff;
+    }
+}

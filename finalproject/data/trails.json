@@ -1,0 +1,77 @@
+{
+    "trails": [
+        {
+            "id": 1,
+            "name": "Sunset Ridge trail",
+            "location": "Salt Lake County, UT",
+            "difficulty": "Easy",
+            "distance_miles": 3.2,
+            "elevation_gain_ft": 450,
+            "type": "loop",
+            "image": "images/sunset.jpg",
+            "description": "A gentle loop trail with wide views of the Valley and a beautiful sunset lookout point.",
+             "featured": true
+        },
+        {
+            "id": 2,
+            "name": "Bear Canyon Loop",
+            "location": "Wasatch Mountains, UT",
+            "difficulty": "Moderate",
+            "distance_miles": 5.8,
+            "elevation_gain_ft": 900,
+            "type": "loop",
+            "image": "images/Bear.jpg",
+            "description": "A scenic forested loop with creek crossings, shaded paths, and great wildlife viewing.",
+            "featured": true
+        },
+        {
+            "id": 3,
+            "name": "Eagle Peak Summit",
+            "location": "Utah County, UT",
+            "difficulty": "Hard",
+            "distance_miles": 7.4,
+            "elevation_gain_ft": 1800,
+            "type": "Out-And-Back",
+            "image": "images/eagle.jpg",
+            "description": "A challenging climb to a panoramic summit with sweeping viewa of the Wasatch Front.",
+            "featured": true
+        },
+        {
+            "id": 4,
+            "name": "Maple Hollow Trail",
+            "location": "Draper, UT",
+            "difficulty": "Moderate",
+            "distance_miles": 4.1,
+            "elevation_gain_ft": 600,
+            "type": "Out-And-Back",
+            "image": "images/maple.jpg",
+            "description": "A popular trail with shaded switchbacks and a rewarding overlook at the top.",
+            "featured": false
+        },
+        {
+            "id": 5,
+            "name": "Hidden Falls Trail",
+            "location": "Big Cottonwood Canyon, UT",
+            "difficulty": "easy",
+            "distance_miles": 1.0,
+            "elevation_gain_ft": 150,
+            "type": "Out-And-Back",
+            "image": "images/hidden.jpg",
+            "description": "A short family-friendly trail leading to a beautiful waterfall tucked into the canyon.",
+            "featured": false
+        },
+        {
+            "id": 6,
+            "name": "Lone Peak Trail",
+            "location": "Alpine, UT",
+            "difficulty": "Hard",
+            "distance_miles": 11.2,
+            "elevation_gain_ft": 5600,
+            "type": "Out-And-Back",
+            "image": "images/lone.jpg",
+            "description": "A strenuous all-day hike to one of the most iconic granite peaks in Utah.",
+            "featured": false
+        }
+
+    ]
+}
