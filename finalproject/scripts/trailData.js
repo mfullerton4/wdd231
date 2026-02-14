@@ -35,7 +35,7 @@ function displayTrails(trails) {
         card.classList.add("trail-card");
 
         card.innerHTML = `
-       <img src="${trail.image}" alt= "${trail.name}">
+       <img src="${trail.image}" alt= "${trail.name}" loading="lazy">
         <h2>${trail.name}</h2>
         <span class="badge ${trail.difficulty.toLowerCase()}">${trail.difficulty}</span>
         <p>${trail.distance_miles} miles • ${trail.elevation_gain_ft} ft gain</p>
