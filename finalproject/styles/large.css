@@ -36,3 +36,7 @@
 .list-view h2 {
     margin-top: 0;
 }
+
+#forecast-container {
+    grid-template-columns: repeat(3, 1fr);
+}
