@@ -71,6 +71,114 @@
             "image": "images/lone.jpg",
             "description": "A strenuous all-day hike to one of the most iconic granite peaks in Utah.",
             "featured": false
+        },
+        {
+            "id": 7,
+            "name": "Desolation Lake Trail",
+            "location": "Big Cottonwood Canyon, UT",
+            "difficulty": "Moderate",
+            "distance_miles": 7.4,
+            "elevation_gain_ft": 1500,
+            "type": "Out-And-Back",
+            "image": "images/desolation.jpg",
+            "description": "A scenic alpine trail leading to a peaceful lake surrounded by pines and rugged ridgelines.",
+            "featured": false
+        },
+        {
+            "id": 8,
+            "name": "Mount Timpanogos Summit",
+            "location": "Utah County, UT",
+            "difficulty": "Hard",
+            "distance_miles": 14.8,
+            "elevation_gain_ft": 4380,
+            "type": "Out-And-Back",
+            "image": "images/timp.jpg",
+            "description": "One of Utah's most iconic hikes, offering wildflowers, wild life, and a breathtaking summit view.",
+            "featured": true
+        },
+        {
+            "id": 9,
+            "name": "Donut Falls Trail",
+            "location": "Big Cottonwood Canyon, UT",
+            "difficulty": "Easy",
+            "distance_miles": 3.0,
+            "elevation_gain_ft": 350,
+            "type": "Out-And-Back",
+            "image": "images/donut.jpg",
+            "description": "A family-friendly trail leading to a unique waterfall that pours through a natural rock hole.",
+            "featured": false        
+        },
+        {
+            "id": 10,
+            "name": "Angels Landing (to Scout Lookout)",
+            "location": "Zion National Park, UT",
+            "difficulty": "Hard",
+            "distance_miles": 4.4,
+            "elevation_gain_ft": 1500,
+            "type": "Out-And-Back",
+            "image": "images/angels.jpg",
+            "description": "A steep, dramatic climb to Scout Lookout with stunning canyon views. Chains section not included.",
+            "featured": true
+        },
+        {
+            "id": 11,
+            "name": "Navajo Loop Trail",
+            "location": "Bryce Canyon National Park, UT",
+            "difficulty": "Moderate",
+            "distance_miles": 1.5,
+            "elevation_gain_ft": 550,
+            "type": "Loop",
+            "image": "images/navajo.jpg",
+            "description": "A short but unforgettable loop through hoodoos, slot-like passages, and Bryce’s iconic orange cliffs.",
+            "featured": false
+        },
+        {
+           "id": 12,
+        "name": "Cecret Lake Trail",
+        "location": "Little Cottonwood Canyon, UT",
+        "difficulty": "Easy",
+        "distance_miles": 1.7,
+        "elevation_gain_ft": 450,
+        "type": "Out-And-Back",
+        "image": "images/cecret.jpg",
+        "description": "A gentle alpine trail leading to a crystal-clear lake surrounded by wildflowers and granite peaks.",
+        "featured": false
+        },
+        {
+            "id": 13,
+            "name": "Fisher Towers Trail",
+            "location": "Moab, UT",
+            "difficulty": "Moderate",
+            "distance_miles": 4.4,
+            "elevation_gain_ft": 900,
+            "type": "Out-And-Back",
+            "image": "images/fisher.jpg",
+            "description": "A dramatic desert trail weaving between towering red rock spires and sweeping canyon views.",
+            "featured": false
+        },
+        {
+            "id": 14,
+            "name": "Red Pine Lake Trail",
+            "location": "Little Cottonwood Canyon, UT",
+            "difficulty": "Hard",
+            "distance_miles": 7.0,
+            "elevation_gain_ft": 2000,
+            "type": "Out-And-Back",
+            "image": "images/redpine.jpg",
+            "description": "A challenging alpine climb to a stunning glacial lake nestled beneath rugged granite peaks.",
+            "featured": true
+        },
+        {
+            "id": 15,
+            "name": "Corona Arch Trail",
+            "location": "Moab, UT",
+            "difficulty": "Moderate",
+            "distance_miles": 3.0,
+            "elevation_gain_ft": 450,
+            "type": "Out-And-Back",
+            "image": "images/corona.jpg",
+            "description": "A fun desert hike featuring ladders, slickrock, and one of Utah’s most impressive natural arches.",
+            "featured": false
         }
 
     ]

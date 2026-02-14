@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expllore local hiking trails with difficulty, distance, elevation, and more.">
+    <meta name="author" content="Mark Fullerton">
+
+    <!-----------Open graph------------>
+    <meta property="og:title" content="Local Trail Finder">
+    <meta property="og:description" content="Discover local hiking trails and plan your next outdoor adventure.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/map.jpg">
+
+    <title>Local Trail Finder | Trails</title>
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--scripts-->
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/trailData.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Local Trail Finder</a>
+            <button id="menu-btn" aria-label="Open Menu"></button>
+            <ul id="menu" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html" class="active">Trails</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--HERO-->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Explore Local Trails</h1>
+                <p>Browse trails by difficulty, distance, and terrain.</p>
+            </div>
+        </section>
+
+        <section class="view-toggle">
+            <button id="grid-view" class="active">Grid View</button>
+            <button id="list-view">List View</button> 
+        </section>
+
+        <section id="trail-container" class="grid-view">
+
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Local Trail Finder</p>
+    </footer>
+
+    <!--Modal-->
+    <dialog id="trail-modal">
+        <button id="close-modal" aria-label="Close Modal">✕</button>
+        <div id="modal-content"></div>
+    </dialog>   
+</body>
+</html>

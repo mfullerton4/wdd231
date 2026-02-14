@@ -13,3 +13,26 @@
         color: #ffffff;
     }
 }
+
+/*trails.html*/
+/*grid view*/
+.grid-view {
+    grid-template-columns: repeat(3,1fr);
+}
+
+/*list view*/
+.list-view .trail-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list-view .trail-card img {
+    width: 220px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.list-view h2 {
+    margin-top: 0;
+}
