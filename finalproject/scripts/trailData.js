@@ -1,5 +1,4 @@
 
-
 const trailContainer = document.querySelector("#trail-container");
 const gridBtn = document.querySelector("#grid-view");
 const listBtn = document.querySelector("#list-view");

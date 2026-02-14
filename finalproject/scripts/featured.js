@@ -1,4 +1,4 @@
-import { getTrails } from "./trailData.js";
+import { trails } from "./trails.js";
 
 const featuredContainer = document.querySelector("#featured-container");
 
