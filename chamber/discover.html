@@ -27,18 +27,19 @@
     
     <!--scripts-->
     <script src="scripts/discover.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
     <!--Favicon-->
-    <link rel="icon" href="favicon(1).ico">
+    <link rel="icon" href="favicon.ico">
 
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <img class="logo" src="images/home.svg" alt="Site Logo" width="512" height="512">
+            <img class="logo" src="images/home.svg" loading="lazy" alt="Site Logo" width="512" height="512">
             <span>West Valley City Chamber of Commerce</span>
             <ul class="nav-links">
                 <li><a href="https://mfullerton4.github.io/wdd231/">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a class="active" href "directory.html">Directory</a></li>
                 <li><a href="discovery.html">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -46,7 +47,7 @@
         </nav>
         <section class="hero">
             <div class="hero-content">
-                <img src="images/chamberhero.jpg" alt=Utah dessert>
+                <img src="images/chamberhero.jpg" loading="lazy" alt=Utah dessert>
             </div>
         </section>
     </header>
