@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Site Plan</title>
+
+    <!--Typography: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+        
+        <style>
+            :root {
+                /* Color Scheme:*/
+        --primary: #2e7d32;
+        --secondary: #1b5e20;
+        --accent: #f4e9d8;
+        --text-color: #333;
+        --light-gray: #f5f5f5;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: var(--text-color);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            margin: 0.25rem 0 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 3rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 1.25rem 1rem;
+            border-radius: 0.5rem;
+            background-color:var(--secondary) ;
+        }
+        section h2 {
+            margin-top: 2rem;
+            font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.25rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+        ul {
+            padding-left: 1.25rem;
+            margin: 0.25 0 0.75;
+        }
+        li {
+            margin-bottom: 0.25rem;
+        }
+
+        .wireframes {
+            display: grid;
+            gap: 1;
+        }
+        @media (min-width: 700px) {
+            .wireframes {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .wireframe-box {
+            border: 2px dashed var(--primary);
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            background-color: #ffffff;
+        }
+        .wireframe-box h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            color: #555555;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Individual Project Site Plan</h1>
+        <p>WDD 231 - Web Frontend Development</p>
+    </header>
+
+    <main>
+        <!-- Site Name -->
+         <section id="Local Trail Finder">
+            <h2>Local Trail Finder</h2>
+            <p><strong>Local Trail Finder</strong></p>
+            <p>
+                <strong>Reason for Selection: I chose this name because my website helps people find local hiking trails.</strong>
+            </p>
+         </section>
+
+         <!-- Site Purpose -->
+          <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>
+                My website will help people find local hiking trails. My website will also give weather data for the location. 
+            </p>
+          </section>
+
+          <!-- Scenarios -->
+           <section id="Scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What hiking trails are available near my current location?</li>
+                <li>What is the difficulty level and distance of each trail?</li>
+                <li>What will the weather be like for the trail I want to hike?</li>
+            </ul>
+           </section>
+
+           <!-- Color Scheme-->
+            <section id="color-scheme">
+                <h2>Color Scheme</h2>
+                <p>The website uses a natural outdoor inspired palette:</p>
+                <ul>
+                    <li><strong>Primary:</strong> #2e7d32 - Forest green used for the header and accents.</li>
+                    <li><strong>Secondary:</strong> #1b5e20 - Deep green used for section backgrounds.</li>
+                    <li><strong>Accent:</strong> #f4e9d8 - Light tan used for borders and highlits.</li>
+                    <li><strong>Text</strong> #333 - Dark gray for readability.</li>
+                    <li><strong>Light Grey</strong> #f5f5f5 - Background and neutral areas.</li>
+                </ul>
+            </section>
+
+            <!-- Typography -->
+             <section id="Typography">
+                <h2>Typography</h2>
+                <p>The website uses two main fonts:</p>
+                <ul>
+                    <li><strong>Montserrat:</strong> Used for headings to create a clean, bold look.</li>
+                    <li><strong>Roboto:</strong> Used for body text for readability and simplicity.</li>
+                </ul>
+             </section>
+
+             <!-- Wireframes -->
+              <section id="wireframes">
+                <h2>Wireframes</h2>
+                <p>These simple wireframes show the planned layout for mobile and desktop views.</p>
+
+                < class="wireframes">
+                    <div clas="wireframe-box">
+                        <h3>Mobile Wireframe</h3>
+                        <p>. Header with logo<br>
+                           . Hamburger navigation<br>
+                           . Featured trail cards<br>
+                           . Trail list<br>
+                           . Footer</p>
+                    </div>
+
+                    <div class="wireframe-box">
+                        <h3>Desktop Wireframe</h3>
+                        <p>. Full navigation bar<br>
+                           . Hero banner with featured trail<br>
+                           . Two column layout: trail list + weather panel<br>
+                           . Footer</p>
+                    </div>
+                </div>
+              </section>
+             
+    </main>
+    
+</body>
+</html>
