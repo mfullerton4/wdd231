@@ -34,17 +34,48 @@ h1, h2, h3{
     text-decoration: none;
 }
 
+
+/* ---------------- NAVIGATION ---------------- */
+
+/* Hamburger button (visible on mobile) */
 #menu-btn {
     font-size: 1.4rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
-    display: none;
+    display: block;
 }
+
+/* Mobile default: hide nav links */
 .nav-links {
-    display: flex;
+    display: none;
+    flex-direction: column;
     gap: 1.5rem;
     list-style: none;
+    background: var(--dark-green);
+    padding: 1rem;
+}
+
+/* When JS toggles .open → show menu */
+.nav-links.open {
+    display: flex;
+}
+
+/* Desktop layout */
+@media (min-width: 700px) {
+
+    /* Hide hamburger on desktop */
+    #menu-btn {
+        display: none;
+    }
+
+    /* Show nav links horizontally */
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+    }
 }
 .nav-links a {
     color: white;
@@ -90,8 +121,8 @@ h1, h2, h3{
 display: inline-block;
 margin-top: 1rem;
 padding: 0.9rem 1.8rem;
-background: #2e5d34;
-color: #f2e8cf;
+background:var(--green);
+color: var(--tan);
 text-decoration: none;
 border-radius: 6px;
 font-weight: bold;
@@ -113,7 +144,7 @@ transition: background 0.3s ease;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));  
 }
 
-.trail-card {
+.featured-card {
     background: var(--light-gray);
     border-radius: 10px;
     overflow: hidden;
@@ -121,16 +152,16 @@ transition: background 0.3s ease;
     padding-bottom: 1rem;
 }
 
-.trail-card img {
+.featured-card img {
     width: 100%;
     height: 160px;
     object-fit: cover;
 }
-.trail-card h3 {
+.featured-card h3 {
     padding: .75rem 1rem 0;
 }
 
-.trail-card p {
+.featured-card p {
     padding: 0 1rem;
     color: #555;
 }
@@ -213,7 +244,7 @@ footer {
     color: var(--gray);
 }
 /* difficulty badge*/
-.badge {
+.difficulty-badge {
     display: inline-block;
     margin: 0 1rem;
     padding: 0.6rem 1rem;
@@ -238,4 +269,52 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+/* featured trails*/
+.featured {
+    padding: 2rem 1rem;
+}
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.featured-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.featured-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.featured-card h3 {
+    margin: 0.5rem 1rem;
+}
+
+.featured-card p {
+    margin: 0 1rem;
+}
+
+.featured-card .details-btn {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background: #2a6f97;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
 }

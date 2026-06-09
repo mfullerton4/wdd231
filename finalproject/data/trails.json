@@ -20,7 +20,7 @@
             "distance_miles": 5.8,
             "elevation_gain_ft": 900,
             "type": "loop",
-            "image": "images/Bear.jpg",
+            "image": "images/bear.jpg",
             "description": "A scenic forested loop with creek crossings, shaded paths, and great wildlife viewing.",
             "featured": true
         },

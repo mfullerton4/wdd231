@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mark Fullerton">
-    <meta name="description" content="Discover local hiking trails, explore difficulty levels, and plan safe outdoor adventures.">
+    <meta name="description"
+        content="Discover local hiking trails, explore difficulty levels, and plan safe outdoor adventures.">
 
     <!-----------Open graph------------>
     <meta property="og:title" content="Local Trail Finder">
     <meta property="og:description" content="Discover local hiking trails and plan your next outdoor adventure.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/map.jpg">
+    <meta property="og:image" content="https://mfullerton4.github.io/finalproject/images/map.jpg">
 
     <title>Local Trail Finder</title>
 
@@ -26,6 +28,7 @@
     <script type="module" src="scripts/main.js" defer></script>
     <script type="module" src="scripts/featured.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -35,7 +38,7 @@
             <ul id="nav-links" class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="trails.html">Trails</a></li>
-                <li><a href="Weather.html">Weather</a></li>
+                <li><a href="weather.html">Weather</a></li>
             </ul>
         </nav>
     </header>
@@ -80,6 +83,10 @@
             </article>
 
         </section>
+        <section class="featured">
+            <h2>Featured Trails</h2>
+            <div id="featured-container" class="featured-grid"></div>
+        </section>
 
     </main>
 
@@ -87,4 +94,5 @@
         <p>© 2026 Local Trail Finder</p>
     </footer>
 </body>
+
 </html>
