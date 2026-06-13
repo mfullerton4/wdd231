@@ -319,3 +319,16 @@ footer {
 .user-form button:hover {
     background-color: var(--dark-green);
 }
+/*form*/
+.form-results {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.results-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--dark-green);
+    border-radius: 8px;
+    text-align: left;
+}
